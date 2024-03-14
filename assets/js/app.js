@@ -241,7 +241,7 @@ createApp({
                         {
                             date: 'Gen 08, 2024',
                             hour: '15:51',
-                            text: 'OK!!',
+                            text: 'Ok!!',
                             status: 'received'
                         }
                     ],
@@ -279,6 +279,15 @@ createApp({
                 });
 
                 document.getElementById('input-message').value = '';
+
+                setTimeout(() => {
+                    this.activeContact.messages.push({
+                        date: 'Mar 12, 2024',
+                        hour: '18:31',
+                        text: 'Ok!',
+                        status: 'received'
+                    })
+                }, 2000)
             }
         }
 
