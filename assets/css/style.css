@@ -184,13 +184,13 @@ h6 {
     backdrop-filter: blur(2px);
 }
 
-.mine {
+.sent {
     background-color: rgba(193, 245, 153, 0.6);
     border-top-right-radius: 0;
     float: right;
 }
 
-.other {
+.received {
     background-color: rgba(255, 255, 255, 0.6);
     border-top-left-radius: 0;
     float: left;

@@ -13,19 +13,19 @@ createApp({
                         {
                             date: 'Mar 10, 2024',
                             hour: '15:30',
-                            message: 'Hai portato a spasso il cane?',
+                            text: 'Hai portato a spasso il cane?',
                             status: 'sent'
                         },
                         {
                             date: 'Mar 10, 2024',
                             hour: '15:50',
-                            message: 'Ricordati di stendere i panni',
+                            text: 'Ricordati di stendere i panni',
                             status: 'sent'
                         },
                         {
                             date: 'Mar 10, 2024',
                             hour: '16:15',
-                            message: 'Tutto fatto!',
+                            text: 'Tutto fatto!',
                             status: 'received'
                         }
                     ],
@@ -39,19 +39,19 @@ createApp({
                         {
                             date: 'Feb 20, 2024',
                             hour: '16:30',
-                            message: 'Ciao come stai?',
+                            text: 'Ciao come stai?',
                             status: 'sent'
                         },
                         {
                             date: 'Feb 20, 2024',
                             hour: '16:30',
-                            message: 'Bene grazie! Stasera ci vediamo?',
+                            text: 'Bene grazie! Stasera ci vediamo?',
                             status: 'received'
                         },
                         {
                             date: 'Feb 20, 2024',
                             hour: '16:35',
-                            message: 'Mi piacerebbe ma devo andare a fare la spesa.',
+                            text: 'Mi piacerebbe ma devo andare a fare la spesa.',
                             status: 'sent'
                         }
                     ],
@@ -65,19 +65,19 @@ createApp({
                         {
                             date: 'Feb 18, 2024',
                             hour: '10:10',
-                            message: 'Ciao zio, vai in campagna',
+                            text: 'Ciao zio, vai in campagna',
                             status: 'received'
                         },
                         {
                             date: 'Feb 18, 2024',
                             hour: '10:20',
-                            message: 'Sicuro di non aver sbagliato chat?',
+                            text: 'Sicuro di non aver sbagliato chat?',
                             status: 'sent'
                         },
                         {
                             date: 'Feb 18, 2024',
                             hour: '16:15',
-                            message: 'Ah scusa!',
+                            text: 'Ah scusa!',
                             status: 'received'
                         }
                     ],
@@ -91,13 +91,13 @@ createApp({
                         {
                             date: 'Feb 15, 2024',
                             hour: '15:30',
-                            message: 'Lo sai che ha aperto una nuova pizzeria?',
+                            text: 'Lo sai che ha aperto una nuova pizzeria?',
                             status: 'sent'
                         },
                         {
                             date: 'Feb 15, 2024',
                             hour: '15:50',
-                            message: 'Si, ma preferirei andare al cinema',
+                            text: 'Si, ma preferirei andare al cinema',
                             status: 'received'
                         }
                     ],
@@ -111,13 +111,13 @@ createApp({
                         {
                             date: 'Gen 23, 2024',
                             hour: '15:30',
-                            message: 'Ricordati di chiamare la nonna',
+                            text: 'Ricordati di chiamare la nonna',
                             status: 'sent'
                         },
                         {
                             date: 'Gen 23, 2024',
                             hour: '15:50',
-                            message: 'Va bene, stasera la sento',
+                            text: 'Va bene, stasera la sento',
                             status: 'received'
                         }
                     ],
@@ -131,19 +131,19 @@ createApp({
                         {
                             date: 'Gen 19, 2024',
                             hour: '15:30',
-                            message: 'Ciao Ale, hai novità?',
+                            text: 'Ciao Ale, hai novità?',
                             status: 'sent'
                         },
                         {
                             date: 'Gen 19, 2024',
                             hour: '15:50',
-                            message: 'Non ancora',
+                            text: 'Non ancora',
                             status: 'received'
                         },
                         {
                             date: 'Gen 19, 2024',
                             hour: '15:51',
-                            message: 'Nessuna nuova, buona nuova',
+                            text: 'Nessuna nuova, buona nuova',
                             status: 'sent'
                         }
                     ],
@@ -157,13 +157,13 @@ createApp({
                         {
                             date: 'Gen 15, 2024',
                             hour: '15:30',
-                            message: 'Fai gli auguri a Federica che è il suo compleanno!',
+                            text: 'Fai gli auguri a Federica che è il suo compleanno!',
                             status: 'sent'
                         },
                         {
                             date: 'Gen 15, 2024',
                             hour: '15:50',
-                            message: 'Grazie per avermelo ricordato, le scrivo subito!',
+                            text: 'Grazie per avermelo ricordato, le scrivo subito!',
                             status: 'received'
                         }
                     ],
@@ -177,19 +177,19 @@ createApp({
                         {
                             date: 'Gen 10, 2024',
                             hour: '15:30',
-                            message: 'Ciao, andiamo a mangiare la pizza stasera?',
+                            text: 'Ciao, andiamo a mangiare la pizza stasera?',
                             status: 'received'
                         },
                         {
                             date: 'Gen 0, 2024',
                             hour: '15:50',
-                            message: 'No, l\'ho già mangiata ieri, ordiniamo sushi!',
+                            text: 'No, l\'ho già mangiata ieri, ordiniamo sushi!',
                             status: 'sent'
                         },
                         {
                             date: 'Gen 10, 2024',
                             hour: '15:51',
-                            message: 'OK!!',
+                            text: 'OK!!',
                             status: 'received'
                         }
                     ],
@@ -203,19 +203,19 @@ createApp({
                         {
                             date: 'Gen 09, 2024',
                             hour: '00:30',
-                            message: 'Buon Compleanno!',
+                            text: 'Buon Compleanno!',
                             status: 'sent'
                         },
                         {
                             date: 'Gen 09, 2024',
                             hour: '15:50',
-                            message: 'Grazie mille, a presto!',
+                            text: 'Grazie mille, a presto!',
                             status: 'received'
                         },
                         {
                             date: 'Gen 09, 2024',
                             hour: '15:51',
-                            message: '<3',
+                            text: '<3',
                             status: 'sent'
                         }
                     ],
@@ -229,19 +229,19 @@ createApp({
                         {
                             date: 'Gen 08, 2024',
                             hour: '15:30',
-                            message: 'Domani vai a fare la spesa?',
+                            text: 'Domani vai a fare la spesa?',
                             status: 'received'
                         },
                         {
                             date: 'Gen 08, 2024',
                             hour: '15:50',
-                            message: 'Penso di sì, ti faccio sapere',
+                            text: 'Penso di sì, ti faccio sapere',
                             status: 'sent'
                         },
                         {
                             date: 'Gen 08, 2024',
                             hour: '15:51',
-                            message: 'OK!!',
+                            text: 'OK!!',
                             status: 'received'
                         }
                     ],
