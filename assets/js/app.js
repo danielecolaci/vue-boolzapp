@@ -8,19 +8,23 @@ createApp({
                     name: 'Michele',
                     avatar: './assets/img/avatar_1.jpg',
                     visible: true,
+                    access: 'Ultimo accesso alle 13:07',
                     messages: [
                         {
-                            date: '10/05/2024 15:30:55',
+                            date: 'Mar 10, 2024',
+                            hour: '15:30',
                             message: 'Hai portato a spasso il cane?',
                             status: 'sent'
                         },
                         {
-                            date: '10/05/2024 15:50:00',
+                            date: 'Mar 10, 2024',
+                            hour: '15:50',
                             message: 'Ricordati di stendere i panni',
                             status: 'sent'
                         },
                         {
-                            date: '10/05/2024 16:15:22',
+                            date: 'Mar 10, 2024',
+                            hour: '16:15',
                             message: 'Tutto fatto!',
                             status: 'received'
                         }
@@ -30,19 +34,23 @@ createApp({
                     name: 'Fabio',
                     avatar: './assets/img/avatar_2.jpg',
                     visible: true,
+                    access: '...sta scrivendo',
                     messages: [
                         {
-                            date: '20/04/2024 16:30:00',
+                            date: 'Feb 20, 2024',
+                            hour: '16:30',
                             message: 'Ciao come stai?',
                             status: 'sent'
                         },
                         {
-                            date: '20/04/2024 16:30:55',
+                            date: 'Feb 20, 2024',
+                            hour: '16:30',
                             message: 'Bene grazie! Stasera ci vediamo?',
                             status: 'received'
                         },
                         {
-                            date: '20/04/2024 16:35:00',
+                            date: 'Feb 20, 2024',
+                            hour: '16:35',
                             message: 'Mi piacerebbe ma devo andare a fare la spesa.',
                             status: 'sent'
                         }
@@ -52,19 +60,23 @@ createApp({
                     name: 'Luca',
                     avatar: './assets/img/avatar_3.jpg',
                     visible: true,
+                    access: 'online',
                     messages: [
                         {
-                            date: '28/03/2024 10:10:40',
-                            message: 'La Marianna va in campagna',
+                            date: 'Feb 18, 2024',
+                            hour: '10:10',
+                            message: 'Ciao zio, vai in campagna',
                             status: 'received'
                         },
                         {
-                            date: '28/03/2024 10:20:10',
+                            date: 'Feb 18, 2024',
+                            hour: '10:20',
                             message: 'Sicuro di non aver sbagliato chat?',
                             status: 'sent'
                         },
                         {
-                            date: '28/03/2024 16:15:22',
+                            date: 'Feb 18, 2024',
+                            hour: '16:15',
                             message: 'Ah scusa!',
                             status: 'received'
                         }
@@ -74,14 +86,17 @@ createApp({
                     name: 'Danilo',
                     avatar: './assets/img/avatar_4.jpg',
                     visible: true,
+                    access: 'Ultimo accesso alle 10:07',
                     messages: [
                         {
-                            date: '15/02/2024 15:30:55',
+                            date: 'Feb 15, 2024',
+                            hour: '15:30',
                             message: 'Lo sai che ha aperto una nuova pizzeria?',
                             status: 'sent'
                         },
                         {
-                            date: '15/02/2024 15:50:00',
+                            date: 'Feb 15, 2024',
+                            hour: '15:50',
                             message: 'Si, ma preferirei andare al cinema',
                             status: 'received'
                         }
@@ -91,14 +106,17 @@ createApp({
                     name: 'Davide',
                     avatar: './assets/img/avatar_5.jpg',
                     visible: true,
+                    access: 'Ultimo accesso alle 09:07',
                     messages: [
                         {
-                            date: '23/01/2024 15:30:55',
+                            date: 'Gen 23, 2024',
+                            hour: '15:30',
                             message: 'Ricordati di chiamare la nonna',
                             status: 'sent'
                         },
                         {
-                            date: '23/01/2024 15:50:00',
+                            date: 'Gen 23, 2024',
+                            hour: '15:50',
                             message: 'Va bene, stasera la sento',
                             status: 'received'
                         }
@@ -108,19 +126,23 @@ createApp({
                     name: 'Alessandra',
                     avatar: './assets/img/avatar_6.jpg',
                     visible: true,
+                    access: 'Ultimo accesso alle 08:07',
                     messages: [
                         {
-                            date: '19/01/2024 15:30:55',
-                            message: 'Ciao Claudia, hai novità?',
+                            date: 'Gen 19, 2024',
+                            hour: '15:30',
+                            message: 'Ciao Ale, hai novità?',
                             status: 'sent'
                         },
                         {
-                            date: '19/01/2024 15:50:00',
+                            date: 'Gen 19, 2024',
+                            hour: '15:50',
                             message: 'Non ancora',
                             status: 'received'
                         },
                         {
-                            date: '19/01/2024 15:51:00',
+                            date: 'Gen 19, 2024',
+                            hour: '15:51',
                             message: 'Nessuna nuova, buona nuova',
                             status: 'sent'
                         }
@@ -130,14 +152,17 @@ createApp({
                     name: 'Giovanni',
                     avatar: './assets/img/avatar_7.jpg',
                     visible: true,
+                    access: 'Ultimo accesso alle 07:07',
                     messages: [
                         {
-                            date: '15/01/2024 15:30:55',
+                            date: 'Gen 15, 2024',
+                            hour: '15:30',
                             message: 'Fai gli auguri a Federica che è il suo compleanno!',
                             status: 'sent'
                         },
                         {
-                            date: '15/01/2024 15:50:00',
+                            date: 'Gen 15, 2024',
+                            hour: '15:50',
                             message: 'Grazie per avermelo ricordato, le scrivo subito!',
                             status: 'received'
                         }
@@ -147,19 +172,23 @@ createApp({
                     name: 'Susanna',
                     avatar: './assets/img/avatar_8.jpg',
                     visible: true,
+                    access: 'online',
                     messages: [
                         {
-                            date: '10/01/2024 15:30:55',
+                            date: 'Gen 10, 2024',
+                            hour: '15:30',
                             message: 'Ciao, andiamo a mangiare la pizza stasera?',
                             status: 'received'
                         },
                         {
-                            date: '10/01/2024 15:50:00',
+                            date: 'Gen 0, 2024',
+                            hour: '15:50',
                             message: 'No, l\'ho già mangiata ieri, ordiniamo sushi!',
                             status: 'sent'
                         },
                         {
-                            date: '10/01/2024 15:51:00',
+                            date: 'Gen 10, 2024',
+                            hour: '15:51',
                             message: 'OK!!',
                             status: 'received'
                         }
@@ -169,19 +198,23 @@ createApp({
                     name: 'Federica',
                     avatar: './assets/img/avatar_9.jpg',
                     visible: true,
+                    access: 'Ultimo accesso alle 05:07',
                     messages: [
                         {
-                            date: '09/01/2024 15:30:55',
+                            date: 'Gen 09, 2024',
+                            hour: '00:30',
                             message: 'Buon Compleanno!',
                             status: 'sent'
                         },
                         {
-                            date: '09/01/2024 15:50:00',
+                            date: 'Gen 09, 2024',
+                            hour: '15:50',
                             message: 'Grazie mille, a presto!',
                             status: 'received'
                         },
                         {
-                            date: '09/01/2024 15:51:00',
+                            date: 'Gen 09, 2024',
+                            hour: '15:51',
                             message: '<3',
                             status: 'sent'
                         }
@@ -191,19 +224,23 @@ createApp({
                     name: 'Tina',
                     avatar: './assets/img/avatar_10.jpg',
                     visible: true,
+                    access: 'Ultimo accesso alle 04:07',
                     messages: [
                         {
-                            date: '08/01/2024 15:30:55',
+                            date: 'Gen 08, 2024',
+                            hour: '15:30',
                             message: 'Domani vai a fare la spesa?',
                             status: 'received'
                         },
                         {
-                            date: '08/01/2024 15:50:00',
+                            date: 'Gen 08, 2024',
+                            hour: '15:50',
                             message: 'Penso di sì, ti faccio sapere',
                             status: 'sent'
                         },
                         {
-                            date: '08/01/2024 15:51:00',
+                            date: 'Gen 08, 2024',
+                            hour: '15:51',
                             message: 'OK!!',
                             status: 'received'
                         }
@@ -214,6 +251,10 @@ createApp({
     },
 
     methods: {
-
+        lastMessage(contact) {
+            const textLast = contact.messages[contact.messages.length - 1];
+            const dateLast = textLast.date.substring(0, 6);
+            return { ...textLast, date: dateLast }
+        }
     }
 }).mount('#app')

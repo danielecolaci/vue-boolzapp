@@ -55,10 +55,10 @@
                         </div>
                         <div class="name-chat">
                             <h3>{{ contact.name }}</h3>
-                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>{{ lastMessage(contact).message }}</p>
                         </div>
                     </div>
-                    <h6>13.07</h6>
+                    <h6>{{ lastMessage(contact).date }}</h6>
                 </div>
             </div>
 
