@@ -71,13 +71,13 @@ createApp({
                         {
                             date: 'Feb 18, 2024',
                             hour: '10:20',
-                            text: 'Sicuro di non aver sbagliato chat?',
+                            text: 'Sicuro di non aver sbagliato chat? ',
                             status: 'sent'
                         },
                         {
                             date: 'Feb 18, 2024',
                             hour: '16:15',
-                            text: 'Ah scusa!',
+                            text: 'Ah scusa! Pensavo di aver scritto a mio Zio, che ha il tuo stesso nome.',
                             status: 'received'
                         }
                     ],
@@ -253,8 +253,13 @@ createApp({
     methods: {
         lastMessage(contact) {
             const textLast = contact.messages[contact.messages.length - 1];
+            let maxTextLast = textLast.text;
+            if (maxTextLast.length > 60) {
+                maxTextLast = maxTextLast.substring(0, 57) + '...';
+            }
+
             const dateLast = textLast.date.substring(0, 6);
-            return { ...textLast, date: dateLast }
+            return { ...textLast, text: maxTextLast, date: dateLast }
         }
     }
 }).mount('#app')
