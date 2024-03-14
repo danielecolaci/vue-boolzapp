@@ -34,7 +34,7 @@ createApp({
                     name: 'Fabio',
                     avatar: './assets/img/avatar_2.jpg',
                     visible: true,
-                    access: '...sta scrivendo',
+                    access: '... sta scrivendo',
                     messages: [
                         {
                             date: 'Feb 20, 2024',
@@ -268,6 +268,7 @@ createApp({
     },
 
     mounted() {
+        this.activeContact = this.contacts.length > 0 ? this.contacts[0] : {};
 
     }
 }).mount('#app')
