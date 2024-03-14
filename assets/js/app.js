@@ -262,9 +262,26 @@ createApp({
             const dateLast = textLast.date.substring(0, 6);
             return { ...textLast, text: maxTextLast, date: dateLast }
         },
+
         selectContact(contact) {
             this.activeContact = contact;
+        },
+
+        sendMessage() {
+            const inputText = document.getElementById('input-message').value;
+
+            if (inputText.trim() !== '') {
+                this.activeContact.messages.push({
+                    date: 'Mar 12, 2024',
+                    hour: '18:30',
+                    text: inputText,
+                    status: 'sent'
+                });
+
+                document.getElementById('input-message').value = '';
+            }
         }
+
     },
 
     mounted() {

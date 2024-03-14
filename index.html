@@ -47,7 +47,8 @@
             </div>
 
             <div class="chat-list">
-                <div class="chat-element flex" v-for="contact in contacts" @click="selectContact(contact)">
+                <div class="chat-element flex" v-for="contact in contacts" @click="selectContact(contact)"
+                    :class="{ 'active' : contact === activeContact }">
                     <div class="info-chat flex">
                         <div class="header-img">
                             <img :src="contact.avatar" alt="">
@@ -102,9 +103,9 @@
                 <div class="icon-bottom flex">
                     <i class="far fa-smile"></i>
                 </div>
-                <input type="text" placeholder="Scrivi un messaggio">
+                <input type="text" placeholder="Scrivi un messaggio" id="input-message" @keyup.enter="sendMessage()">
                 <div class="icon-bottom flex">
-                    <i class="fas fa-microphone"></i>
+                    <i class="fa-solid fa-circle-arrow-right" id="send-btn" @click="sendMessage()"></i>
                 </div>
             </div>
 

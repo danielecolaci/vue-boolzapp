@@ -22,7 +22,7 @@ body {
 
 input {
     border: none;
-    color: gray;
+    color: #121212;
 }
 
 i {
@@ -164,6 +164,9 @@ h6 {
     text-align: end;
 }
 
+.active {
+    background-color: #EAEAEA;
+}
 
 /* /Left */
 /* Right */
