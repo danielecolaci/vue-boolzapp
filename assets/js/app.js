@@ -246,7 +246,8 @@ createApp({
                         }
                     ],
                 }
-            ]
+            ],
+            activeContact: {}
         }
     },
 
@@ -260,6 +261,13 @@ createApp({
 
             const dateLast = textLast.date.substring(0, 6);
             return { ...textLast, text: maxTextLast, date: dateLast }
+        },
+        selectContact(contact) {
+            this.activeContact = contact;
         }
+    },
+
+    mounted() {
+
     }
 }).mount('#app')
