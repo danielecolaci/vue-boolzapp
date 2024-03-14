@@ -16,7 +16,7 @@
 
 <body class="flex">
 
-    <div class="container flex">
+    <div class="container flex" id="app">
         <!-- Left -->
         <div class="left-side">
             <div class="header left flex">
@@ -48,123 +48,20 @@
             </div>
 
             <div class="chat-list">
-                <div class="chat-element flex">
+                <div class="chat-element flex" v-for="contact in contacts">
                     <div class="info-chat flex">
                         <div class="header-img">
-                            <img src="./assets/img/avatar_1.jpg" alt="">
+                            <img :src="contact.avatar" alt="">
                         </div>
                         <div class="name-chat">
-                            <h3>Michele</h3>
+                            <h3>{{ contact.name }}</h3>
                             <p>Lorem ipsum dolor sit amet.</p>
                         </div>
                     </div>
                     <h6>13.07</h6>
                 </div>
-
-                <div class="chat-element flex">
-                    <div class="info-chat flex">
-                        <div class="header-img">
-                            <img src="./assets/img/avatar_2.jpg" alt="">
-                        </div>
-                        <div class="name-chat">
-                            <h3>Fabio</h3>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-                    </div>
-                    <h6>12.15</h6>
-                </div>
-
-                <div class="chat-element flex">
-                    <div class="info-chat flex">
-                        <div class="header-img">
-                            <img src="./assets/img/avatar_3.jpg" alt="">
-                        </div>
-                        <div class="name-chat">
-                            <h3>Luca</h3>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-                    </div>
-                    <h6>11.47</h6>
-                </div>
-
-                <div class="chat-element flex">
-                    <div class="info-chat flex">
-                        <div class="header-img">
-                            <img src="./assets/img/avatar_4.jpg" alt="">
-                        </div>
-                        <div class="name-chat">
-                            <h3>Danilo</h3>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-                    </div>
-                    <h6>10.02</h6>
-                </div>
-
-                <div class="chat-element flex">
-                    <div class="info-chat flex">
-                        <div class="header-img">
-                            <img src="./assets/img/avatar_5.jpg" alt="">
-                        </div>
-                        <div class="name-chat">
-                            <h3>Davide</h3>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-                    </div>
-                    <h6>09.55</h6>
-                </div>
-
-                <div class="chat-element flex">
-                    <div class="info-chat flex">
-                        <div class="header-img">
-                            <img src="./assets/img/avatar_6.jpg" alt="">
-                        </div>
-                        <div class="name-chat">
-                            <h3>Alessandra</h3>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-                    </div>
-                    <h6>09.12</h6>
-                </div>
-
-                <div class="chat-element flex">
-                    <div class="info-chat flex">
-                        <div class="header-img">
-                            <img src="./assets/img/avatar_7.jpg" alt="">
-                        </div>
-                        <div class="name-chat">
-                            <h3>Giovanni</h3>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-                    </div>
-                    <h6>08.30</h6>
-                </div>
-
-                <div class="chat-element flex">
-                    <div class="info-chat flex">
-                        <div class="header-img">
-                            <img src="./assets/img/avatar_8.jpg" alt="">
-                        </div>
-                        <div class="name-chat">
-                            <h3>Susanna</h3>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-                    </div>
-                    <h6>01.50</h6>
-                </div>
-
-                <div class="chat-element flex">
-                    <div class="info-chat flex">
-                        <div class="header-img">
-                            <img src="./assets/img/avatar_9.jpg" alt="">
-                        </div>
-                        <div class="name-chat">
-                            <h3>Federica</h3>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-                    </div>
-                    <h6>00.01</h6>
-                </div>
             </div>
+
         </div>
         <!-- /Left -->
         <!-- Right -->
