@@ -309,7 +309,8 @@ createApp({
 
     mounted() {
         //Set the default contact to show on refresh
-        this.activeContact = this.contacts.length > 0 ? this.contacts[0] : {};
+        this.activeContact = this.contacts[0];
+
 
     }
 }).mount('#app')

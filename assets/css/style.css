@@ -53,6 +53,7 @@ i {
 .header-img {
     height: 50px;
     width: 50px;
+    cursor: pointer;
 }
 
 .header-img img {
@@ -62,6 +63,7 @@ i {
 
 .header i {
     padding: 0 10px;
+    cursor: pointer;
 }
 
 .name-chat {
@@ -96,6 +98,7 @@ h3 {
 .bell {
     background-color: white;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .fa-bell-slash {
@@ -154,6 +157,7 @@ h4 {
     padding: 0 10px;
     align-items: center;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 h6 {
@@ -234,6 +238,7 @@ h6 {
 .bottom-right i {
     font-size: 24px;
     margin: auto;
+    cursor: pointer;
 }
 
 .bottom-right input {
