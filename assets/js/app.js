@@ -247,7 +247,11 @@ createApp({
                     ],
                 }
             ],
-            activeContact: {}
+
+            activeContact: {},
+
+            searchedContacts: [],
+            searchModel: ''
         }
     },
 
@@ -303,14 +307,28 @@ createApp({
                     })
                 }, 2000)
             }
+        },
+
+        //Function to search and filter contacts
+        searchContacts() {
+            console.log(this.searchModel);
+
+            this.searchedContacts = this.contacts.filter(contact =>
+                contact.name.toLowerCase().includes(this.searchModel.toLowerCase())
+            )
+
+            console.log(this.searchedContacts);
         }
 
     },
 
     mounted() {
-        //Set the default contact to show on refresh
+        //Set the default contact-chat view on refresh
         this.activeContact = this.contacts[0];
 
+        //Set the default contact-list view on refresh
+        this.searchedContacts = this.contacts;
 
     }
+
 }).mount('#app')

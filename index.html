@@ -42,12 +42,13 @@
             <div class="search flex">
                 <div class="search-input flex">
                     <i class="fas fa-search"></i>
-                    <input type="search" placeholder="Cerca o inizia una nuova chat">
+                    <input type="search" placeholder="Cerca o inizia una nuova chat" id="search-input"
+                        @input="searchContacts()" v-model="searchModel">
                 </div>
             </div>
 
             <div class="chat-list">
-                <div class="chat-element flex" v-for="contact in contacts" @click="selectContact(contact)"
+                <div class="chat-element flex" v-for="contact in searchedContacts" @click="selectContact(contact)"
                     :class="{ 'active' : contact === activeContact }">
                     <div class="info-chat flex">
                         <div class="header-img">
