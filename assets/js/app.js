@@ -318,6 +318,11 @@ createApp({
             )
 
             console.log(this.searchedContacts);
+        },
+
+        //Function to delete a message on click
+        deleteMessage(index) {
+            this.activeContact.messages.splice(index, 1)
         }
 
     },

@@ -86,14 +86,15 @@
 
             <div class="chat">
 
-                <div class="message" v-for="message in activeContact.messages" :class="message.status">
+                <div class="message" v-for="(message, index) in activeContact.messages" :class="message.status">
                     <h6>{{ message.hour }}</h6>
                     <p>{{ message.text }}</p>
                     <div class="option">
                         <i class="fas fa-angle-down"></i>
                         <div class="message-option">
                             <span><i class="fa-solid fa-circle-info"></i> Info</span>
-                            <span><i class="fa-solid fa-trash"></i> Delete</span>
+                            <span id="delete-message" @click="deleteMessage(index)"><i class="fa-solid fa-trash"></i>
+                                Delete</span>
                         </div>
                     </div>
                 </div>
