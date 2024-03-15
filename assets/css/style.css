@@ -215,13 +215,20 @@ h6 {
     right: 8px;
 }
 
-.message i {
+.message .fas {
     position: absolute;
     top: 4px;
-    right: 8px;
     color: rgba(0, 0, 0, 0.2);
     font-size: 14px;
     cursor: pointer;
+}
+
+.sent .fas {
+    left: 8px;
+}
+
+.received .fas {
+    right: 8px;
 }
 
 .bottom-right {
@@ -249,18 +256,35 @@ h6 {
 
 .message-option {
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(5px);
     border-radius: 8px;
+    color: white;
     font-size: 14px;
     font-weight: 500;
     position: absolute;
     z-index: 5;
-    top: 15px;
-    right: 10px;
-    display: none;
+    top: 10px;
     cursor: pointer;
+    gap: 10px;
+    flex-direction: column;
+    display: none;
+}
+
+.sent .message-option {
+    left: -70px;
+    border-top-right-radius: 0;
+}
+
+.received .message-option {
+    right: -70px;
+    border-top-left-radius: 0;
+}
+
+.message-option .fa-solid {
+    color: white;
+    font-size: 14px;
+    margin-right: 6px;
 }
 
 /* /Right */
@@ -375,10 +399,10 @@ a:hover {
 }
 
 .option:hover .message-option {
-    display: block;
+    display: flex;
 }
 
-.option p:hover {
+.option span:hover {
     font-weight: 700;
 }
 
