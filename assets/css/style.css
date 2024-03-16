@@ -53,7 +53,6 @@ i {
 .header-img {
     height: 50px;
     width: 50px;
-    cursor: pointer;
 }
 
 .header-img img {
@@ -64,6 +63,10 @@ i {
 .header i {
     padding: 0 10px;
     cursor: pointer;
+}
+
+.header h6 {
+    margin: 0;
 }
 
 .name-chat {
@@ -84,6 +87,7 @@ h3 {
 
 .info-chat {
     align-items: center;
+    cursor: pointer;
 }
 
 /* Left */
