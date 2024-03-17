@@ -41,6 +41,8 @@ createApp({
 
             //Check if the text is not an empty string
             if (inputText.trim() !== '') {
+
+                //Luxon date and time
                 const nowTime = luxon.DateTime.now();
                 const formattedDate = nowTime.toLocaleString(luxon.DateTime.DATE_MED);
                 const formattedHour = nowTime.toLocaleString(luxon.DateTime.TIME_24_SIMPLE);
@@ -56,6 +58,10 @@ createApp({
                 //Clear the input
                 document.getElementById('input-message').value = '';
 
+                //Audio sent
+                const sendAudio = new Audio('./assets/sounds/Send.mp3');
+                sendAudio.play();
+
                 //Add the received message to the array
                 setTimeout(() => {
                     this.activeContact.messages.push({
@@ -64,6 +70,11 @@ createApp({
                         text: 'Ok!',
                         status: 'received'
                     })
+
+                    //Audio received
+                    const receiveAudio = new Audio('./assets/sounds/Receive.mp3');
+                    receiveAudio.play();
+
                 }, 2000)
             }
         },
